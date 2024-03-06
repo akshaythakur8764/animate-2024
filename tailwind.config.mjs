@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         custom: {
-          background: '#141414',
-          text: '#cfcfcf',
+          background: 'white',
+          text: 'black',
         },
       },
       maxWidth: {
-        '8xl': '90rem',
+        '8xl': '110rem',
       },
       typography: (theme) => ({
         DEFAULT: {

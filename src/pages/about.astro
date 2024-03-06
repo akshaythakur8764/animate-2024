@@ -3,15 +3,29 @@ import Main from '../layouts/main.astro';
 ---
 
 <Main>
-  <h1>About</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit, orci non vulputate porta, sem erat
-    lacinia sem, ac tincidunt nibh turpis a turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-    posuere cubilia curae; Proin ullamcorper ac diam et porttitor. Proin mollis enim eros, sed rutrum nunc fermentum
-    sed. Nullam fermentum auctor leo, in pretium turpis varius non. Cras euismod est eget dolor pharetra semper. Nulla
-    ut dictum dolor, vel vestibulum velit. Morbi arcu ipsum, interdum id iaculis id, rutrum sed enim. Orci varius
-    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam imperdiet turpis at risus rhoncus,
-    in mollis odio aliquam. Praesent eget eros purus. Praesent imperdiet id diam a rutrum. Nam laoreet ullamcorper
-    sapien, eget tincidunt magna dictum rutrum. Nam ut cursus magna
-  </p>
+  <section id="about">
+  
+
+    <div class="flex flex-col md:flex-row pt-3 mt-3">
+      <!-- heading on bottom of div -->
+      <div class="w-1/2 relative min-h-full">
+        <div class=" bottom-0">
+        <h1 class="justify-end text-6xl mb-4">About Synfig Studio 2D animation Hackathon</h1>
+      </div>
+      </div>
+      <div class="w-1/2">
+        <iframe width="480" height="300" src="https://www.youtube.com/embed/UXk_v_sukGU?si=tVK_d4-posQa-RvW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <!-- conten -->
+    <div class="mt-4">
+      <div class="pt-4 leading-normal sm:leading-loose">
+      
+        <p class="text-justify text-2xl nunito-sans-text">FOSSEE, IIT Bombay in association with Whistling Woods International is hosting an online Synfig Studio 2D Animation Hackathon. Synfig Studio is a cross-platform free and open source vector-based 2D animation software which is designed to produce film-quality animation with minimum resources. So get started, avail this opportunity to upgrade your skills and enhance your career. 
+          We welcome newbies and veterans- from high school students to professionals and FLOSS enthusiasts to take part in this Hackathon.
+           </p>
+      </div>
+    </div>
+</section>
 </Main>
