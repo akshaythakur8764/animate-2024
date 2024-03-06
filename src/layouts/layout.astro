@@ -181,9 +181,19 @@ import navLinks from "./nav-links.json";
     margin-bottom: 5px;
     display: inline-block;
     font-size: larger;
+
   }
 
-  ul li {
+  ul.menu li {
     display: inline-block;
+    border-right: 3px solid #000;
+    list-style: none;
+  padding: 0px 8px;
   }
+  ul.menu li a{
+  text-decoration: none;
+}
+ul.menu li:last-child{  
+  border-right: none;
+}
 </style>
