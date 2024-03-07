@@ -2,8 +2,8 @@
  
   { "label": "About", "href": "/about" },
   { "label": "Eligibility", "href": "/eligibility" },
-  { "label": "Resources", "href": "/pricing" },
-  { "label": "Rules and Regulations", "href": "/services" },
+  { "label": "Resources", "href": "/resources" },
+  { "label": "Rules and Regulations", "href": "/rules" },
   { "label": "Partners", "href": "/contact" },
   { "label": "Contact", "href": "/contact" }
   
