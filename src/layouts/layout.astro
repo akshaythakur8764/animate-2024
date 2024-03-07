@@ -45,50 +45,7 @@ import navLinks from "./nav-links.json";
   lightbox.addEventListener("click", handleNav);
 </script>
 
-<!-- <header class='sticky top-0 z-40 w-full border-b border-b-zinc-700 bg-custom-background'>
-  <div class='max-w-8xl mx-auto'>
-    <div class='py-4 mx-4 lg:px-8 lg:mx-0'>
-      <div class='relative flex items-center'>
-        <a class='flex items-center font-black no-underline' href='/' aria-current='page'
-          ><span role='img' aria-label="'Rocket" class='mr-1'>🚀</span>Astro</a
-        >
-        <nav class="desktop-menu">
-          <ul class="menu">
-            {
-              navLinks.map((link) => {
-                const { label, href } = link;
-  
-                return (
-                  <li class="menu-item">
-                    <a href={href}>{label}</a>
-                  </li>
-                );
-              })
-            }
-          </ul>
-        </nav>
-        <div class='relative
-              flex
-              lg:hidden
-              items-center
-              ml-auto'>
-          <button id='menu' class='ml-auto flex items-center justify-center'>
-            <span class='sr-only'>Navigation</span>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              class='h-6 w-6'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path id='menuPath' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'> </path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</header> -->
+
 <div class="relative">
   <!-- <div id="lightbox" aria-label="lightbox" tab-index="0" role="button"
     class="z-20 top-0 left-0 w-screen h-screen bg-custom-background opacity-80"
@@ -100,16 +57,22 @@ import navLinks from "./nav-links.json";
       class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-1/4 py-4 px-0 overflow-y-auto lg:left-[max(0px,calc(0%-45rem))]"
       style="background:#f70000;"
     >
-      <!-- <nav> -->
-      <ul>
+    <div class="grid grid-rows-4 sm:grid-rows-4">
+      <div class="row-span-1">Row 1 content</div>
+      <div class="row-span-1">Row 2 content</div>
+      <div class="row-span-1"><ul>
         <li class="text-red-300"><a href="/register">Register</a></li>
-      </ul>
+      </ul></div>
+      <div class="row-span-1 bg-red-500">Row 4 content</div>
+    </div>
+      <!-- <nav> -->
+      
       <!-- </nav> -->
     </div>
 
     <main class="lg:pl-[25rem] ">
      
-      <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">  
+      <!-- <div class="mx-auto px-0 sm:px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">   -->
         <div class="flex items-end justify-end">   
 <nav class="float-end mb-3 pb-2">
   <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem] ">
@@ -129,7 +92,7 @@ import navLinks from "./nav-links.json";
 
             return (
               <li class="menu-item">
-                <a href={href}>{label}</a>
+                <a class="text-brown-300 hover:text-red-600 transition duration-300 menu-item" href={href}>{label}</a>
               </li>
             );
           })
@@ -158,16 +121,24 @@ import navLinks from "./nav-links.json";
 </div>
       <div
       
-      class="lg:hidden sm:block h-screen"
+      class="lg:hidden sm:block"
       style="background:#f70000;"
     >
       <!-- <nav> -->
-      <ul>
-        <li class="text-red-300"><a href="/register">Register</a></li>
-      </ul>
+        <div class="grid grid-rows-4 sm:grid-rows-4">
+          <div class="row-span-1">Row 1 content</div>
+          <div class="row-span-1">Row 2 content</div>
+          <div class="row-span-1"><ul>
+            <li class="text-red-300"><a href="/register">Register</a></li>
+            <li class="text-red-300"><a href="/register">Register</a></li>
+            <li class="text-red-300"><a href="/register">Register</a></li>
+            <li class="text-red-300"><a href="/register">Register</a></li>
+          </ul></div>
+          <div class="row-span-1 bg-red-500">Row 4 content</div>
+        </div>
       <!-- </nav> -->
     </div>
-  </div>
+  <!-- </div> -->
 
     <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">
         <slot />
@@ -186,14 +157,24 @@ import navLinks from "./nav-links.json";
 
   ul.menu li {
     display: inline-block;
-    border-right: 3px solid #000;
+    border-right: 2px solid rgb(156, 3, 3);
+    border-style: inset;
     list-style: none;
-  padding: 0px 8px;
+    padding: 0px 8px;
   }
   ul.menu li a{
   text-decoration: none;
+  color:#6c5353;
+}
+ul.menu li a:hover{
+  color:red;
+}
+.menu-item.active a{
+  color:red;
 }
 ul.menu li:last-child{  
   border-right: none;
 }
+ul.menu li:hover,
+a.active {color: aqua;}
 </style>
