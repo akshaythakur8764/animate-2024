@@ -2,6 +2,8 @@
 import Layout from './layout.astro';
 import '../css/custom.css';
 import '@astrojs/tailwind/base.css';
+import { ViewTransitions } from 'astro:transitions';
+import { slide } from 'astro:transitions';
 ---
 
 <html lang='en'>
@@ -11,19 +13,24 @@ import '@astrojs/tailwind/base.css';
     <meta charset='utf-8' />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
+    <ViewTransitions />
   </head>
   <body class='prose max-w-none ' style="background-color:#e7dacb ;">
     <Layout>
       <slot />
       <!-- back to home -->
-<a href="/"
-type="button"
-data-twe-ripple-init
-data-twe-ripple-color="light"
-class="!fixed bottom-5 end-5 rounded-full bg-red-500 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-lg focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
-><i class="far fa-home text-red-50 text-3xl"></i>
-</a>
+      <div class="!fixed bottom-5 end-5 rounded-full bg-red-500 m-3 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-lg "
+      transition:animate={slide({ duration: '0.4s' })}>
+
+        <a href="/"
+        type="button"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
+        class="focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+       
+        ><i class="far fa-home text-red-50 text-3xl"></i>
+      </a>
+    </div>
     </Layout>
   </body>
 </html>
