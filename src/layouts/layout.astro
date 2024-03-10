@@ -229,17 +229,17 @@ a.active {color: aqua;}
 </style>
 
 <script>
-  // Vanilla JavaScript for handling the active class
-  document.addEventListener('astro:page-load', function(event) {
-  // Get the current URL to determine the active page
+ 
+  document.addEventListener('astro:page-load', () =>{
+
   var currentUrl = window.location.pathname;
 
-  // Get all menu items (adjust the selector based on your HTML structure)
+
   var menuItems = document.querySelectorAll('.nav-link');
 
-  // Loop through menu items to find and set the active class
+ 
   menuItems.forEach(function(item) {
-    // Get the href attribute of the menu item
+   
     var menuItemUrl = item.getAttribute('href');
 
     // Check if the current URL matches the menu item's href
@@ -249,6 +249,31 @@ a.active {color: aqua;}
     } else {
       // Remove the 'active' class from other menu items
       item.classList.remove('active');
+    }
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current URL to determine the active page
+  var currentUrl = window.location.pathname;
+
+  // Get all navigation links (adjust the selector based on your HTML structure)
+  var navLinks = document.querySelectorAll('.nav-link');
+
+  // Loop through the navigation links to find and set the active class
+  navLinks.forEach(function (link) {
+    // Get the href attribute of the navigation link
+    var linkUrl = link.getAttribute('href');
+
+    // Check if the current URL matches the link's href
+    if (currentUrl === linkUrl) {
+      // Add the 'active' class to the matching navigation link
+      link.classList.add('active');
+    } else {
+      // Remove the 'active' class from other navigation links
+      link.classList.remove('active');
     }
   });
 });
