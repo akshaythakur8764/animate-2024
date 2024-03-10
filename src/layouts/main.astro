@@ -14,13 +14,16 @@ import { slide } from 'astro:transitions';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <ViewTransitions />
+   
   </head>
   <body class='prose max-w-none ' style="background-color:#e7dacb ;">
     <Layout>
       <slot />
       <!-- back to home -->
-      <div class="!fixed bottom-5 end-5 rounded-full bg-red-500 m-3 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-lg "
-      transition:animate={slide({ duration: '0.4s' })}>
+      
+    </Layout>
+    <div class="!fixed bottom-5 end-5 rounded-full bg-red-500 m-3 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-lg "
+    transition:animate={slide({ duration: '0.4s' })}>
 
         <a href="/"
         type="button"
@@ -31,6 +34,5 @@ import { slide } from 'astro:transitions';
         ><i class="far fa-home text-red-50 text-3xl"></i>
       </a>
     </div>
-    </Layout>
   </body>
 </html>
