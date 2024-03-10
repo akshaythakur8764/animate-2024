@@ -140,7 +140,7 @@ import regi from '../images/btn-01-a.png';
 
             return (
               <li>
-                <a class={"text-brown-300 hover:text-red-600 transition duration-300 ${location.pathname===href?'active':''}"} href={href}>{label}</a>
+                <a class="nav-link text-brown-300 hover:text-red-600 transition duration-300" href={href}>{label}</a>
               </li>
             );
           })
@@ -227,32 +227,30 @@ ul.menu li:last-child{
 ul.menu li:hover,
 a.active {color: aqua;}
 </style>
+
 <script>
-  //  const div = document.querySelector(".menu-item");
-  // const navLinks = div.querySelectorAll("a");
-  // const currentURL = window.location.href;
-  // navLinks.forEach((link) => {
-  //   if (link.href === currentURL) {
-  //     link.classList.add("active");
-  //   }
-  // });
-  const setActiveMenu = () => {
-    const menu = document.querySelector('.menu');
-    const navLinks = menu.querySelectorAll('.menu-item a');
-    const currentURL = window.location.pathname;
+  // Vanilla JavaScript for handling the active class
+  document.addEventListener('astro:page-load', function(event) {
+  // Get the current URL to determine the active page
+  var currentUrl = window.location.pathname;
 
-    navLinks.forEach((link) => {
-      if (link.getAttribute('href') === currentURL) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  };
+  // Get all menu items (adjust the selector based on your HTML structure)
+  var menuItems = document.querySelectorAll('.nav-link');
 
-  document.addEventListener('DOMContentLoaded', setActiveMenu);
+  // Loop through menu items to find and set the active class
+  menuItems.forEach(function(item) {
+    // Get the href attribute of the menu item
+    var menuItemUrl = item.getAttribute('href');
 
-  window.addEventListener('beforeunload', () => {
-    document.removeEventListener('DOMContentLoaded', setActiveMenu);
+    // Check if the current URL matches the menu item's href
+    if (currentUrl === menuItemUrl) {
+      // Add the 'active' class to the matching menu item
+      item.classList.add('active');
+    } else {
+      // Remove the 'active' class from other menu items
+      item.classList.remove('active');
+    }
   });
+});
+
 </script>
