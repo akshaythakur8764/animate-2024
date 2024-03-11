@@ -1,6 +1,7 @@
 ---
 import navLinks from "./nav-links.json";
 import regi from '../images/btn-01-a.png';
+import { slide } from 'astro:transitions';
 
 ---
 
@@ -62,8 +63,8 @@ import regi from '../images/btn-01-a.png';
       style="background:#f70000;"
     >
     <div class="grid grid-rows-4 sm:grid-rows-4">
-      <div class="row-span-1">Row 1 content</div>
-      <div class="row-span-1">Row 2 content</div>
+      <div class="row-span-1">ANIMATE</div>
+      <div class="row-span-1">ANIMATE</div>
       <div class="row-span-1"><ul>
         <li class="text-red-300"><a href="/register" class="flex-1 card border-indigo-600 items-center justify-center rounded-md overflow-hidden m-2 focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg">
     
@@ -174,8 +175,8 @@ import regi from '../images/btn-01-a.png';
     >
       <!-- <nav> -->
         <div class="h-screen grid grid-rows-4 sm:grid-rows-4">
-          <div class="row-span-1">Row 1 content</div>
-          <div class="row-span-1">Row 2 content</div>
+          <div class="row-span-1">2D-ANIMATION</div>
+          <div class="row-span-1">ANIMATE</div>
           <div class="row-span-1"><ul>
             <li class="text-red-300"><a href="/register">Register</a></li>
             <li class="text-red-300"><a href="/register">Register</a></li>
@@ -188,7 +189,8 @@ import regi from '../images/btn-01-a.png';
     </div>
   <!-- </div> -->
 
-    <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">
+    <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]"
+    transition:animate={slide({ duration: '0.4s' })}>
         <slot />
       </div>
     </main>
@@ -226,6 +228,9 @@ ul.menu li:last-child{
 }
 ul.menu li:hover,
 a.active {color: aqua;}
+ul.menu li a.active{
+  color:#f70000;
+}
 </style>
 
 <script>
@@ -255,27 +260,5 @@ a.active {color: aqua;}
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Get the current URL to determine the active page
-  var currentUrl = window.location.pathname;
-
-  // Get all navigation links (adjust the selector based on your HTML structure)
-  var navLinks = document.querySelectorAll('.nav-link');
-
-  // Loop through the navigation links to find and set the active class
-  navLinks.forEach(function (link) {
-    // Get the href attribute of the navigation link
-    var linkUrl = link.getAttribute('href');
-
-    // Check if the current URL matches the link's href
-    if (currentUrl === linkUrl) {
-      // Add the 'active' class to the matching navigation link
-      link.classList.add('active');
-    } else {
-      // Remove the 'active' class from other navigation links
-      link.classList.remove('active');
-    }
-  });
-});
 
 </script>
