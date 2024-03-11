@@ -1,10 +1,10 @@
 [
  
   { "label": "About", "href": "/about" },
-  { "label": "Eligibility", "href": "/eligibility" },
+  
   { "label": "Resources", "href": "/resources" },
-  { "label": "Rules and Regulations", "href": "/rules" },
-  { "label": "Partners", "href": "/contact" },
+  { "label": "Rules", "href": "/rules" },
+  { "label": "Partners", "href": "/contact/#partner" },
   { "label": "Contact", "href": "/contact" }
   
 ]

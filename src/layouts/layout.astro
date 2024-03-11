@@ -63,16 +63,17 @@ import logo from '../images/Logo-Animate.png'
   <div class="max-w-8xl mx-auto px-0 sm:px-0 md:px-0">
     <div
       id="sidebar"
-      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[26rem] py-4 px-0"
+      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[26rem] py-4 px-0 justify-center pt-28"
       style="background:#f70000;"
     >
-    <div class="pt-5 px-5">
+    
 
-      <img  src={logo.src} alt="regi" decoding="async" />
-    </div>
-    <div class="grid grid-rows-4 sm:grid-rows-4">
-      
-      <div class="row-span-1"><ul>
+      <div class="pt-5 px-5">
+        
+        <img  src={logo.src} alt="regi" decoding="async" />
+      </div>
+   
+      <div class="row-span-1 pt-4"><ul>
         <li class="text-red-300"><a href="/register" class="flex-1 card border-indigo-600 items-center justify-center rounded-md overflow-hidden focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg">
     
           <img class="hover:brightness-75" src={regi.src} alt="regi" decoding="async" />
@@ -109,17 +110,22 @@ import logo from '../images/Logo-Animate.png'
       </a></li>
     </ul>
     </div>
-      <div class="row-span-1"><div class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row">
-        <div class="dates">
-          <p class="important-date flex items-center justify-centertext-2xl md:text-left lg:text-2xl"><strong>Registration starts on: &nbsp;</strong><br /> 15 March 2024</p>
-       
-</div>
-      </div></div>
-    </div>
-      <!-- <nav> -->
+        <div class="grid grid-rows-4 sm:grid-rows-4 pt-4">
+          
+          
+          <div class="row-span-1">
+            <div class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row">
+              <div class="dates items-center" style="color:#e7dacb">
+                <p class="important-date flex items-center justify-centertext-2xl md:text-left lg:text-2xl"><strong>Registration starts on: &nbsp;</strong></p>
+                <p class="important-date flex items-center justify-centertext-2xl md:text-left lg:text-2xl"> 15 March 2024</p>
+                
+              </div>
+            </div></div>
+          </div>
+        </div>
+          
       
-      <!-- </nav> -->
-    </div>
+   
 
     <main class="lg:pl-[25rem] ">
      

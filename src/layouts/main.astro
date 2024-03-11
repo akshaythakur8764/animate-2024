@@ -3,7 +3,9 @@ import Layout from './layout.astro';
 import '../css/custom.css';
 import '@astrojs/tailwind/base.css';
 import { ViewTransitions } from 'astro:transitions';
-import { slide } from 'astro:transitions';
+
+
+
 ---
 
 <html lang='en'>
@@ -13,6 +15,7 @@ import { slide } from 'astro:transitions';
     <meta charset='utf-8' />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+   
     <ViewTransitions />
    
   </head>
@@ -22,17 +25,19 @@ import { slide } from 'astro:transitions';
       <!-- back to home -->
       
     </Layout>
+    <div class="absolute z-10">
     <div class="!fixed bottom-5 end-5 rounded-full bg-red-500 m-3 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-lg "
-    transition:animate={slide({ duration: '0.4s' })}>
+    >
 
         <a href="/"
         type="button"
         data-twe-ripple-init
         data-twe-ripple-color="light"
-        class="focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+        class="focus:bg-red-600 focus:shadow-lg focus:outline-none  focus:ring-0 active:bg-blue-800 active:shadow-lg"
        
-        ><i class="far fa-home text-red-50 text-3xl"></i>
+        ><i class="far fa-home text-red-50 text-3xl z-10"></i>
       </a>
     </div>
+  </div>
   </body>
 </html>
