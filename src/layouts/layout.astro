@@ -5,7 +5,7 @@ import { slide } from 'astro:transitions';
 
 ---
 
-<script>
+<!-- <script>
   var isNavOpen = false;
   const menu = document.querySelector("#menu");
   const lightbox = document.querySelector("#lightbox");
@@ -49,7 +49,7 @@ import { slide } from 'astro:transitions';
 
   
 </script>
-
+ -->
 
 <div class="relative">
   <!-- <div id="lightbox" aria-label="lightbox" tab-index="0" role="button"
@@ -102,10 +102,10 @@ import { slide } from 'astro:transitions';
       </a></li>
     </ul>
     </div>
-      <div class="row-span-1 bg-red-500"><div class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row">
+      <div class="row-span-1"><div class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row">
         <div class="dates">
           <p class="important-dates text-green-600 flex items-center justify-centertext-2xl md:text-left lg:text-2xl"><strong>Registration starts on: &nbsp;</strong> 15 March 2024</p>
-          <p class="important-dates text-blue-600 flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong>Submission duration: &nbsp;</strong> 1 April - 21 April 2024</p>
+          <!-- <p class="important-dates text-blue-600 flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong>Submission duration: &nbsp;</strong> 1 April - 21 April 2024</p> -->
          <!-- <p class="important-dates"><strong>Hackathon start date : </strong>March 01, 2024 (tentative)</p> -->
           <!--<p class="important-dates"><strong>Problem Statement Announcement + Submission Opens: </strong>12th Nov</p>
           <p class="important-dates"><strong>Submission Closes:</strong> 28th Nov</p>
@@ -170,11 +170,11 @@ import { slide } from 'astro:transitions';
 </div>
       <div
       
-      class="lg:hidden sm:block"
+      class="lg:hidden sm:block rounded-t-lg mx-1 px-1"
       style="background:#f70000;"
     >
       <!-- <nav> -->
-        <div class="h-screen grid grid-rows-4 sm:grid-rows-4">
+        <div class="grid grid-rows-4 sm:grid-rows-4">
           <div class="row-span-1">2D-ANIMATION</div>
           <div class="row-span-1">ANIMATE</div>
           <div class="row-span-1"><ul>
@@ -226,8 +226,8 @@ ul.menu li a:hover{
 ul.menu li:last-child{  
   border-right: none;
 }
-ul.menu li:hover,
-a.active {color: aqua;}
+/* ul.menu li:hover, */
+/* a.active {color: aqua;} */
 ul.menu li a.active{
   color:#f70000;
 }
@@ -241,7 +241,7 @@ ul.menu li a.active{
 
 
   var menuItems = document.querySelectorAll('.nav-link');
-
+// console.log(menuItems);
  
   menuItems.forEach(function(item) {
    
