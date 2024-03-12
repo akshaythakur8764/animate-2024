@@ -3,12 +3,36 @@ import Main from '../layouts/main.astro';
 ---
 
 <Main>
- <section id="partner">
+ <section id="contact">
     <!-- First Row -->
-    <div class="bg-blue-500 p-4 text-white">
-      <!-- Your content for the first row goes here -->
-      <p>Partners </p>
-  </div>
+    <div class="flex flex-col md:flex-row pt-3 mt-3">
+      <!-- heading on bottom of div -->
+      <div class="w-full md:w-1/2 relative min-h-full">
+        <div class="md:absolute bottom-0">
+        <h1 class="justify-end text-4xl mb-4">Contact Us</h1>
+      </div>
+      </div>
+      <!-- <div class="w-1/2">
+        <img  src={eligibility.src} alt="WELCOM TO SYNFIG STUDIO HACKATHON" decoding="async"
+        transition:animate={slide({ duration: '0.6s', delay: '1s' , direction: 'backward'})} />
+      </div> -->
+    </div>
+    
+    <!-- conten -->
+    <div class="mt-4">
+      <div class="pt-4 leading-normal sm:leading-loose">
+      
+        <div class="text-justify md:text-2xl text-sm playfair-display-normal">
+          <p>For any queries, write to us at </p>
+          <ul>
+       
+            <li><a href="mailto:info@fossee.in">info@fossee.in</a></li>
+            <li><a href="mailto:contact-focal@fossee.in">contact-focal@fossee.in</a></li>
+          </ul>
+        </div>
+          </div>
+      </div>
+    </div>
 
   <!-- Second Row (Footer) -->
  
@@ -20,11 +44,11 @@ import Main from '../layouts/main.astro';
     <!-- Three Columns in the Footer -->
     
 
-<div class="w-full flex sm:flex-row flex-row mb-4">
+<!-- <div class="w-full flex sm:flex-row flex-row mb-4">
  
   
   <div class="w-1/3">
-      <!-- First Column Content -->
+    
       <h1 class="section-title">Contact us</h1>
       <ul>
        
@@ -34,7 +58,7 @@ import Main from '../layouts/main.astro';
           
   </div>
   <div class="w-1/3">
-      <!-- Second Column Content -->
+   
       <ul class="list-unstyled text-small">
         <li><a class="text-gray-700" href="https://fossee.in" target="_blank">FOSSEE</a></li>
         <li><a class="text-gray-700" href="https://focal.fossee.in/" target="_blank">Focal</a></li>
@@ -42,7 +66,7 @@ import Main from '../layouts/main.astro';
      </ul>
   </div>
   <div class="w-1/3">
-      <!-- Third Column Content -->
+   
       <ul class="list-unstyled text-small">
         <li><a class="text-gray-700" href="https://www.synfig.org/" target="_blank">Synfig.org</a></li>
         <li><a class="text-gray-7 00" href="https://spoken-tutorial.org" target="_blank">Spoken Tutorial</a></li>
@@ -50,12 +74,12 @@ import Main from '../layouts/main.astro';
         <li><a class="text-gray-700" href="https://forums.spoken-tutorial.org" target="_blank">Spoken Tutorial Forum</a></li>
      </ul>
   </div>
-</div>
+</div> -->
 
 <!-- Centered Text in the Footer -->
 <div class="text-center">
-  <p class="text-center">This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</p>
-         <p class="text-center">The FOSSEE project is funded by the National Mission on Education through ICT, Ministry of Education, Government of India.</p>
+  <p class="text-center text-xs">This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</p>
+         <p class="text-center text-xs">The FOSSEE project is funded by the National Mission on Education through ICT, Ministry of Education, Government of India.</p>
       
 </div>
 </div>
