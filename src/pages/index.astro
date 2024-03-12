@@ -5,16 +5,20 @@ import Syngif from '../images/syn-gif.gif';
 ---
 
 <Main>
-  <section>
-
+  <section id="hero">
+    <img class="w-full object-cover" src={Hero.src} alt="WELCOM TO SYNFIG STUDIO HACKATHON" decoding="async" />
     <div class="h-auto flex flex-col">
-      <div class="w-full">
-        
-        <img class="w-full" src={Hero.src} alt="WELCOM TO SYNFIG STUDIO HACKATHON" decoding="async" />
-      </div>
+     
       <div class="static lg:absolute bottom-0 lg:bottom-10">
         <img  src={Syngif.src} alt="WELCOM TO SYNFIG STUDIO HACKATHON" decoding="async" />
       </div>
     </div>
   </section>
+
 </Main>
+
+<style>
+  #hero{
+    background: 'src/images/hero.png';
+  }
+</style>
