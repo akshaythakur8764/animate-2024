@@ -1,9 +1,9 @@
 [
  
   { "label": "About", "href": "/about" },
-  
   { "label": "Resources", "href": "/resources" },
   { "label": "Rules", "href": "/rules" },
+  { "label": "Theme", "href": "/theme" },
   { "label": "Partners", "href": "/partners" },
   { "label": "Contact", "href": "/contact" }
   
