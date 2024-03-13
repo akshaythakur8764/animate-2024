@@ -223,9 +223,9 @@ ul.menu li a.active{
 
 <script>
  
-  
+ document.addEventListener('astro:page-load', () => {
 
-  var currentUrl = window.location.pathname;
+  var currentUrl = window.location.pathname.replace(/\/+$/, '');
 
 
   var menuItems = document.querySelectorAll('.nav-link');
@@ -245,7 +245,7 @@ console.log(menuItemUrl);
     }
   });
 
-
+ });
 
 
 
