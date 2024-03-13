@@ -5,8 +5,9 @@ import { slide } from 'astro:transitions';
 import theme from '../images/btn-02-a.png';
 import guide from '../images/btn-03-a.png';
 import result from '../images/btn-04-a.png';
-import logo from '../images/Logo-Animate.png'
-
+import logo from '../images/Logo-Animate.png';
+import fos from '../images/fossee-logo.png';
+import iit from '../images/IIT Bombay - logo.png';
 ---
 
 
@@ -19,12 +20,15 @@ import logo from '../images/Logo-Animate.png'
   <div class="max-w-8xl mx-auto px-0 sm:px-0 md:px-0">
     <div
       id="sidebar"
-      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-16"
+      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-10"
       style="background:#f70000;"
     >
     
-
-      <div class="px-5">
+    <div class="grid grid-cols-2 gap-4 p-2">
+      <div><img  src={fos.src} alt="regi" decoding="async" /></div>
+      <div><img  src={iit.src} alt="regi" decoding="async" /></div>
+    </div>
+      <div class="px-5 pt-7">
         
         <img  src={logo.src} alt="regi" decoding="async" />
       </div>
@@ -32,39 +36,13 @@ import logo from '../images/Logo-Animate.png'
       <div class="row-span-1 pt-4 flex items-center justify-center"><ul>
         <li class="text-red-300"><a href="/register" class="flex-1 border-indigo-600 items-center justify-center rounded-md overflow-hidden">
     
-          <img class="hover:opacity-100 opacity-75 hover:shadow-none shadow-md shadow-cyan-500/50 duration-300" src={regi.src} alt="regi" decoding="async" />
+          <img class="hover:opacity-100 opacity-75 hover:shadow-none shadow-md shadow-cyan-500/50 duration-300 border border-red-950" src={regi.src} alt="regi" decoding="async" />
           <!-- <img src="../images/register.png" alt="Image 1" class="w-1/4 w-25"> -->
       
           
         </a></li>
       </ul>
-      <!-- <ul>
-      <li class="text-red-300"><a href="/register" class="flex-1 card border-indigo-600 items-center justify-center rounded-md overflow-hidden">
-  
-        <img class="hover:brightness-100 brightness-75 mr-1" src={theme.src} alt="regi" decoding="async" />
-      
-    
-        
-      </a></li>
-    </ul>
-    <ul>
-      <li class="text-red-300"><a href="/register" class="flex-1 card border-indigo-600 items-center justify-center rounded-md overflow-hidden">
-  
-        <img class="hover:brightness-100 brightness-75 mr-1" src={guide.src} alt="guide" decoding="async" />
-        
-    
-        
-      </a></li>
-    </ul>
-    <ul>
-      <li class="text-red-300"><a href="/result" class="flex-1 card border-indigo-600 items-center justify-center rounded-md overflow-hidden">
-  
-        <img class="hover:brightness-100 brightness-75" color:#6c5353; src={result.src} alt="result" decoding="async" />
-       
-    
-        
-      </a></li>
-    </ul> -->
+     
     </div>
         <div class="grid grid-rows-4 sm:grid-rows-4 pt-4">
           
@@ -109,23 +87,7 @@ import logo from '../images/Logo-Animate.png'
           })
         }
       </ul>
-      <!-- <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul> -->
+      
     </div>
   </div>
 </nav>
@@ -136,8 +98,12 @@ import logo from '../images/Logo-Animate.png'
       style="background:#f70000;"
     >
       <!-- <nav> -->
+        <div class="grid grid-cols-2 gap-4">
+          <div><img  src={fos.src} alt="regi" decoding="async" /></div>
+          <div><img  src={iit.src} alt="regi" decoding="async" /></div>
+        </div>
         <div class="grid my-auto grid-rows-1 sm:grid-rows-1">
-          <div class="row-span-1"><div class="pt-5 px-5 flex items-center justify-center">
+          <div class="row-span-1"><div class="pt-5 flex items-center justify-center">
         
             <img  src={logo.src} alt="regi" decoding="async" />
           </div></div>
@@ -145,9 +111,9 @@ import logo from '../images/Logo-Animate.png'
          
         </div>
         <div class="flex items-center justify-center"><ul class="">
-          <li class="text-red-300"><a href="/register" class="flex-1 border-indigo-600 items-center justify-center rounded-md overflow-hidden">
+          <li class="py-2 "><a href="/register">
       
-            <img class="hover:opacity-100 opacity-75 hover:shadow-none shadow-md shadow-amber-800 duration-300" src={regi.src} alt="regi" decoding="async" />
+            <img class="hover:opacity-100 opacity-75 hover:shadow-none shadow-md shadow-amber-800 duration-300 border border-red-950" src={regi.src} alt="regi" decoding="async" />
             <!-- <img src="../images/register.png" alt="Image 1" class="w-1/4 w-25"> -->
         
             
