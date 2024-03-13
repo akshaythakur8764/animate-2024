@@ -223,18 +223,18 @@ ul.menu li a.active{
 
 <script>
  
-  document.addEventListener('astro:page-load', () =>{
+  
 
   var currentUrl = window.location.pathname;
 
 
   var menuItems = document.querySelectorAll('.nav-link');
-console.log(menuItems);
+
 console.log(currentUrl);
   menuItems.forEach(function(item) {
    
     var menuItemUrl = item.getAttribute('href');
-
+console.log(menuItemUrl);
     // Check if the current URL matches the menu item's href
     if (currentUrl === menuItemUrl) {
       // Add the 'active' class to the matching menu item
@@ -244,7 +244,7 @@ console.log(currentUrl);
       item.classList.remove('active');
     }
   });
-});
+
 
 
 
