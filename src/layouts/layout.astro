@@ -7,7 +7,7 @@ import guide from '../images/btn-03-a.png';
 import result from '../images/btn-04-a.png';
 import logo from '../images/Logo-Animate.png';
 import fos from '../images/fossee-logo.png';
-import iit from '../images/IIT Bombay - logo.png';
+import iit from '../images/IITB-logo.png';
 ---
 
 
@@ -24,10 +24,7 @@ import iit from '../images/IIT Bombay - logo.png';
       style="background:#f70000;"
     >
     
-    <div class="grid grid-cols-2 gap-4 p-2">
-      <div><img  src={fos.src} alt="regi" decoding="async" /></div>
-      <div><img  src={iit.src} alt="regi" decoding="async" /></div>
-    </div>
+    
       <div class="px-5 pt-7">
         
         <img  src={logo.src} alt="regi" decoding="async" />
@@ -64,7 +61,12 @@ import iit from '../images/IIT Bombay - logo.png';
     <main class="lg:pl-[25rem] ">
      
       <!-- <div class="mx-auto px-0 sm:px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">   -->
-        <div class="flex items-end justify-end">   
+        <div class="flex items-end justify-end">  
+          <div class="lg:pl-[25rem] fixed left-0 justify-start grid grid-cols-2 gap-2 p-2">
+            <div><img  src={iit.src} alt="iitb" decoding="async" /></div>
+            <div><img  src={fos.src} alt="fossee" decoding="async" /></div>
+           
+          </div> 
 <nav class="float-end mb-3 pb-2">
   <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem] ">
       <button class='inline-flex items-center justify-center md:hidden' data-collapse-toggle="main-navigation" type="button" aria-controls="main-navigation" aria-expanded="false">
