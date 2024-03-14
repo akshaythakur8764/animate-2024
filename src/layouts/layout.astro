@@ -20,15 +20,19 @@ import iit from '../images/IITB-logo.png';
   <div class="max-w-8xl mx-auto px-0 sm:px-0 md:px-0">
     <div
       id="sidebar"
-      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-10"
+      class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-4"
       style="background:#f70000;"
     >
-    <div class="flex flex-row gap-2 px-2">
-      <div><img  src={iit.src} alt="iitb" decoding="async" /></div>
-      <div><img  src={fos.src} alt="fossee" decoding="async" /></div>
-     
-    </div> 
-    
+    <div class="flex flex-row grid grid-cols-2 gap-2 px-2" data-astro-cid-mmggtga4="">
+    <div data-astro-cid-mmggtga4="">
+    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
+    width: 50%;">
+    </div>
+    <div data-astro-cid-mmggtga4="" class="flex float-end items-end justify-end">
+    <img  src={fos.src} alt="fossee" decoding="async" style="width: 50%;">
+    </div>
+    </div>
+
       <div class="px-5 pt-7">
         
         <img  src={logo.src} alt="regi" decoding="async" />
@@ -99,12 +103,16 @@ import iit from '../images/IITB-logo.png';
       class="lg:hidden sm:block rounded-t-lg mx-1 px-1"
       style="background:#f70000;"
     >
-      <!-- <nav> -->
-        <div class="grid grid-cols-2 gap-4">
-          <div><img  src={iit.src} alt="regi" decoding="async" /></div>
-          <div class="flex items-end justify-end"><img  src={fos.src} alt="regi" decoding="async" /></div>
-         
-        </div>
+      <!-- <nav> --> 
+    <div class="flex flex-row grid grid-cols-2 gap-2 px-2" data-astro-cid-mmggtga4="">
+    <div data-astro-cid-mmggtga4="">
+    <img class="items-start justify-left float-left" src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
+    width: 50%;">
+    </div>
+    <div data-astro-cid-mmggtga4=""><img class="flex items-end justify-end float-end" src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" 
+    style="width: 50%;">
+    </div>
+    </div>
         <div class="grid my-auto grid-rows-1 sm:grid-rows-1">
           <div class="row-span-1"><div class="pt-5 flex items-center justify-center">
         
