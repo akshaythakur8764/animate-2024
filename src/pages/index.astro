@@ -2,9 +2,56 @@
 import Main from '../layouts/main.astro';
 import Hero from '../images/hero.png';
 import Syngif from '../images/syn-gif.gif';
+import logo from '../images/Logo-Animate.png';
+import fos from '../images/fossee-logo.png';
+import iit from '../images/IITB-logo.png';
+import regi from '../images/btn-01-a.png';
 ---
 
 <Main>
+<div
+      
+      class="lg:hidden sm:block rounded-t-lg mx-1 px-1" style="background:#f70000;"
+    >
+      <!-- <nav> --> 
+    <div class="flex flex-row md:grid md:grid-cols-6 px-2 pt-2" data-astro-cid-mmggtga4="">
+    <div class="flex col-start-1 col-end-3" data-astro-cid-mmggtga4="">
+    <a href="https://www.iitb.ac.in/" target="_blank">
+    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
+    width: 50%;">
+    </a>
+    </div>
+    <div class="flex col-end-7 col-span-2 align-items-end justify-end float-right" data-astro-cid-mmggtga4="">
+    <a href="https://fossee.in" target="_blank">
+    <img class="float-end" src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" 
+    style="width: 50%;">
+    </a>
+    </div>
+    </div>
+        <div class="grid my-auto grid-rows-1 sm:grid-rows-1">
+          <div class="row-span-1"><div class="pt-5 flex items-center justify-center">
+        
+            <img  src={logo.src} alt="regi" decoding="async" />
+          </div></div>
+         
+         
+        </div>
+        <div class="flex items-center justify-center"><ul class="">
+          <li class="py-2 "><a href="/register">
+      
+            <img class="duration-300" src={regi.src} alt="regi" decoding="async" />
+            <!-- <img src="../images/register.png" alt="Image 1" class="w-1/4 w-25"> -->
+        
+            
+          </a></li>
+        </ul></div>
+        <div class="row-span-1 bg-red-500"> <div class="dates items-center" style="color:#e7dacb">
+          <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Registration starts on -</strong></p>
+          <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"> 15 March 2024</p>
+          
+        </div></div>
+      <!-- </nav> -->
+    </div>
   <section id="hero">
     <img class="w-full object-cover" src={Hero.src} alt="WELCOM TO SYNFIG STUDIO HACKATHON" decoding="async" />
     <div class="h-auto flex flex-col">
@@ -16,9 +63,3 @@ import Syngif from '../images/syn-gif.gif';
   </section>
 
 </Main>
-
-<style>
-  #hero{
-    background: 'src/images/hero.png';
-  }
-</style>
