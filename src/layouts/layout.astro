@@ -23,25 +23,25 @@ import iit from '../images/IITB-logo.png';
       class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-4"
       style="background:#f70000;"
     >
-    <div class="flex flex-row grid grid-cols-2 gap-2 px-2" data-astro-cid-mmggtga4="">
-    <div data-astro-cid-mmggtga4="">
-    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
+    <div class="flex flex-row ml-2 mr-2" data-astro-cid-mmggtga4="">
+    <div data-astro-cid-mmggtga4="" class=>
+    <img class="max-w-full" src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
     width: 50%;">
     </div>
     <div data-astro-cid-mmggtga4="" class="flex float-end items-end justify-end">
-    <img  src={fos.src} alt="fossee" decoding="async" style="width: 50%;">
+    <img class="max-w-full"  src={fos.src} alt="fossee" decoding="async" style="width: 50%;">
     </div>
     </div>
 
       <div class="px-5 pt-7">
         
-        <img  src={logo.src} alt="regi" decoding="async" />
+        <img  src={logo.src} alt="ANIMATE 2024" decoding="async" />
       </div>
    
       <div class="row-span-1 pt-4 flex items-center justify-center"><ul>
         <li class="text-red-300"><a href="/register" class="flex-1 border-indigo-600 items-center justify-center rounded-md overflow-hidden">
     
-          <img class="hover:opacity-100 opacity-75 hover:shadow-none shadow-md shadow-cyan-500/50 duration-300 border border-red-950" src={regi.src} alt="regi" decoding="async" />
+          <img class="duration-300" src={regi.src} alt="regi" decoding="async" />
           <!-- <img src="../images/register.png" alt="Image 1" class="w-1/4 w-25"> -->
       
           
@@ -49,7 +49,7 @@ import iit from '../images/IITB-logo.png';
       </ul>
      
     </div>
-        <div class="grid grid-rows-4 sm:grid-rows-4 pt-4">
+        <div class="grid grid-rows-4 sm:grid-rows-4">
           
           
           <div class="row-span-1">
@@ -72,7 +72,7 @@ import iit from '../images/IITB-logo.png';
         <div class="flex items-end justify-end">  
          
 <nav class="float-end mb-3 pb-2">
-  <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem] ">
+  <div class="mx-auto px-4 lg:px-16 pt-4 max-w-none xl:ml-0 xl:mr-[0rem] ">
       <button class='inline-flex items-center justify-center md:hidden' data-collapse-toggle="main-navigation" type="button" aria-controls="main-navigation" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -104,12 +104,13 @@ import iit from '../images/IITB-logo.png';
       style="background:#f70000;"
     >
       <!-- <nav> --> 
-    <div class="flex flex-row grid grid-cols-2 gap-2 px-2" data-astro-cid-mmggtga4="">
-    <div data-astro-cid-mmggtga4="">
-    <img class="items-start justify-left float-left" src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
+    <div class="flex flex-row md:grid md:grid-cols-6 px-2" data-astro-cid-mmggtga4="">
+    <div class="flex col-start-1 col-end-3" data-astro-cid-mmggtga4="">
+    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="
     width: 50%;">
     </div>
-    <div data-astro-cid-mmggtga4=""><img class="flex items-end justify-end float-end" src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" 
+    <div class="flex col-end-7 col-span-2 align-items-end justify-end float-right" data-astro-cid-mmggtga4="">
+    <img src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" 
     style="width: 50%;">
     </div>
     </div>
@@ -124,7 +125,7 @@ import iit from '../images/IITB-logo.png';
         <div class="flex items-center justify-center"><ul class="">
           <li class="py-2 "><a href="/register">
       
-            <img class="hover:opacity-100 opacity-75 hover:shadow-none shadow-md shadow-amber-800 duration-300 border border-red-950" src={regi.src} alt="regi" decoding="async" />
+            <img class="duration-300" src={regi.src} alt="regi" decoding="async" />
             <!-- <img src="../images/register.png" alt="Image 1" class="w-1/4 w-25"> -->
         
             
@@ -139,7 +140,7 @@ import iit from '../images/IITB-logo.png';
     </div>
   <!-- </div> -->
 
-    <div class="mx-auto px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]"
+    <div class="mx-auto px-4 lg:px-16 max-w-none xl:ml-0 xl:mr-[0rem]"
     transition:animate={slide({ duration: '0.4s' })}>
         <slot />
       </div>
