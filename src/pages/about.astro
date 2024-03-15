@@ -8,17 +8,17 @@ import { slide } from 'astro:transitions';
   <section id="about">
   
 
-    <div class="flex flex-col md:flex-row pt-3 mt-3">
+    <div class="flex flex-col md:flex-row pt-16 mt-3">
       <!-- heading on bottom of div -->
       <div class="w-full md:w-1/2 relative min-h-full">
         <div class="md:absolute bottom-0">
-        <h1 class="justify-end text-4xl mb-4">About ANIMATE 2024</h1>
+        <h1 class="justify-end text-4xl ">About ANIMATE 2024</h1>
 
       </div>
       </div>
       <div class="w-1/2">
         <iframe width="300" height="200" src="https://www.youtube.com/embed/UXk_v_sukGU?si=tVK_d4-posQa-RvW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-        transition:animate={slide({ duration: '0.6s', delay: '1s' , direction: 'backward'})}></iframe>
+        transition:animate={slide({ duration: '0.6s', delay: '1s' , direction: 'backward'})} style="display: none;"></iframe>
       </div>
     </div>
     
@@ -27,7 +27,7 @@ import { slide } from 'astro:transitions';
       <div class="pt-4 leading-normal sm:leading-loose">
       
         <p class="text-pretty md:text-xl text-sm playfair-display-normal">
-        ANIMATE 2024 is an online Synfig Studio 2D Animation Hackathon organized by FOSSEE, IIT Bombay. India is known for its creativity and resourcefulness, with innovation happening everywhere, from busy cities to quiet villages. With ANIMATE 2024, themed as Celebrating India's Innovation, we want to highlight and celebrate India's innovative spirit. So get started, avail this opportunity to upgrade your skills, and enhance your career. We welcome newbies and veterans - from high school students to professionals and FLOSS enthusiasts - to take part in this Hackathon.
+          ANIMATE 2024 is an online Synfig Studio 2D Animation Hackathon organized by FOSSEE, IIT Bombay. The FOSSEE project is part of the National Mission on Education through Information and Communication Technology (ICT), Ministry of Education (MoE), Government of India. India is known for its creativity and resourcefulness, with innovation happening everywhere, from busy cities to quiet villages. With ANIMATE 2024, themed as Celebrating India's Innovation, we want to highlight and celebrate India's innovative spirit. So get started, avail this opportunity to upgrade your skills, and enhance your career. We welcome newbies and veterans - from school students to professionals and FLOSS enthusiasts - to take part in this Hackathon.
            </p>
       </div>
     </div>
