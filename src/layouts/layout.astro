@@ -173,7 +173,7 @@ ul.menu li a.active{
  
  document.addEventListener('astro:page-load', () => {
 if(window.location.hash){
-var currentUrl = window.location.pathname + window.location.hash.replace(/\/+$/, '');
+var currentUrl = window.location.pathname.replace(/\/+$/, '') + window.location.hash.replace(/\/+$/, '');
 }
 else{
 
