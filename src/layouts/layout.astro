@@ -172,8 +172,13 @@ ul.menu li a.active{
 <script>
  
  document.addEventListener('astro:page-load', () => {
+if(window.location.hash){
+var currentUrl = window.location.pathname + window.location.hash.replace(/\/+$/, '');
+}
+else{
 
   var currentUrl = window.location.pathname.replace(/\/+$/, '');
+}
 
 
   var menuItems = document.querySelectorAll('.nav-link');

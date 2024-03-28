@@ -7,5 +7,6 @@
   { "label": "Resources", "href": "/resources" },
   { "label": "Rules", "href": "/rules" },
   { "label": "Partners", "href": "/partners" },
-  { "label": "Contact", "href": "/contact" }
+  { "label": "Contact", "href": "/contact" },
+  {"label": "FAQs", "href": "/contact#faq"}
 ]
